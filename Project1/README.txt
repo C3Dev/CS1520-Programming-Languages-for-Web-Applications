@@ -1,0 +1,13 @@
+
+
+
+Specifications:
+You will implement a simple Doodle-ish program to enable users to select various options for meeting times. Your program will have the following requirements:
+1)    A schedule will be pre-made as a text file called 'schedule.txt' with the format as shown in Figure 1 of a1snap.htm.  Your program can assume that this file will be premade and will be error-free.  Your program should work with an arbitrary, properly formatted 'schedule.txt' file.
+2)    User input will be stored in a file called 'users.txt' with the format as shown in Figure 2 of a1snap.htm.  This file may or may not exist when your program starts but you can assume that if it exists it will be error-free.
+3)    Your program will parse the 'schedule.txt' file and the 'users.txt' file. From these files it will produce an initial list of schedule items with a row for each user's selections, a row for a new entry and a row for the total counts for each item.  For an example of how this should look see Figure 3 in a1snap.htm.
+4)    To add a new row the user clicks on the "New" button.  This updates the table so that the row in question can now be edited by the user and submitted. When the new entry is submitted, a script should parse the data and append an appropriately formatted line to the "users.txt" file.  Then the updated table should be sent back in a new page to the user. See Figures 4-6 in a1snap.htm.
+5)    For each new entry added, a cookie should be generated and stored on the client machine.  When the page is generated, an "Edit" option should be shown for each entry for which the cookie is found.  This will enable the user to update / modify an entry at some later point, even if he closes his browser and re-opens it before revisiting the site.  Edited entries should maintain their same locations within the 'users.txt' file, so in order to update these effectively in these situations you should rewrite the entire 'users.txt' file. See Figures 6-9 in a1snap.htm.
+6)    Entries submitted from one browser / machine should not be editable via another browser / machine.  See Figure 10 in a1snap.htm
+7)    Your program should handle synchronization issues properly.  For example, if two users on different browsers submit new entries "at the same time" in fact one should be done first and the first submission should be shown correctly to the second user.  For another example, assume that one user clicks "New" but has not yet submitted, and that another user (on a different browser) then clicks "New" and submits.  Finally, the first user submits.  In this case the second user's entry should be first in the 'users.txt' file and should appear to the first user after the submit. Test your program to make sure it works in these situations.
+
